@@ -1,0 +1,231 @@
+.menuBurger {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  z-index: 100;
+  transition: all .4s ease-out;
+  background-color: #fff;
+
+  @include for-size(tablet-portrait-up) {
+    width: 30%;
+  }
+
+
+  &-search {
+    display: flex;
+    padding: 1rem;
+
+    &-input {
+      padding: 1rem 2.5rem;
+      font-size: 1.6rem;
+      width: 70%;
+      border: .4px solid grey;
+      border-radius: 2px 0px 2px 2px;
+      background-color: #E4E4E4;
+      outline: none;
+      margin-left: 1.5rem;
+
+      @include for-size(tablet-portrait-up) {
+        display: none;
+        width: 90%;
+      }
+    }
+
+    &-btn {
+      background-color: #E4E4E4;
+      border: .4px solid grey;
+      border-radius: 2px 2px 2px 0px;
+      border-left: none;
+      outline: none;
+      cursor: pointer;
+
+
+      @include for-size(tablet-portrait-up) {
+        display: none;
+      }
+    }
+
+    &-img {
+      width: 3rem;
+    }
+
+  }
+
+  &-close {
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    display: flex;
+    cursor: pointer;
+    @include for-size(tablet-portrait-up) {
+      position: relative;
+      left: 85%;
+    }
+  }
+
+  &-closeLeft {
+    height: 3rem;
+    width: .2rem;
+    background-color: $primary-pink;
+    transform: rotate(37.5deg);
+
+  }
+
+  &-closeRight {
+    height: 3rem;
+    width: .2rem;
+    transform: rotate(-37.5deg);
+    background-color: $primary-pink;
+  }
+
+  &-login {
+    display: flex;
+    padding: 1rem .5rem;
+    justify-content: space-evenly;
+
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+
+    &-Ins {
+      border-radius: 2px;
+      padding: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.5;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $primary-pink;
+
+      @include for-size(tablet-portrait-up) {
+        margin-right: .5rem;
+      }
+    }
+
+    &-Con {
+      border-radius: 2px;
+      padding: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.5;
+      text-decoration: none;
+      background-color: #E5E5E5;
+
+      text-transform: uppercase;
+
+      color: #000;
+    }
+
+  }
+
+  &-containerList {
+    padding: 1rem 0rem;
+  }
+
+  &-list {
+
+    padding: 1rem 0rem;
+  }
+
+  &-listItem {
+    border-top: 2px solid #E5E5E5;
+    padding: 1.5rem;
+
+  }
+
+  &-listItem:last-child {
+    border-bottom: 2px solid #E5E5E5;
+
+    @include for-size(tablet-portrait-up) {
+      border-bottom: none;
+    }
+  }
+
+  &-listLink {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: grey;
+  }
+
+  &-goodDeal {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+
+    &-btn {
+      background-color: $primary-blue;
+      font-size: 1.7rem;
+      padding: 1rem;
+      color: #fff;
+      border: none;
+      outline: none;
+    }
+
+    &-link {
+      width: 80%;
+      font-size: 1.6rem;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1rem;
+      letter-spacing: 0.5;
+      background-color: $primary-blue-light;
+    }
+  }
+
+  &-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+  }
+
+  &-socialLink {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: silver;
+    border: 1px solid #F8F8F8;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #F5F5F5;
+
+  }
+
+}
+
+.open {
+  left: 0;
+  transition: all .4s ease-out;
+}
+
+.padding-right {
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+}
+.chevron-right {
+  margin-left: 2rem;
+}
+
+.pink {
+  color: $primary-pink;
+}
+
+.blue {
+  color: $primary-blue;
+}
+
+.black {
+  color: black;
+}
